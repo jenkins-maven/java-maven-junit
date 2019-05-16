@@ -33,7 +33,7 @@ public class HelloApp {
         try {
             hi.setTimes(times);
         } catch (IllegalArgumentException e) {
-            System.err.println("Something went wrong: " + e.getMessage());
+            System.err.println("Something went wrong: " + e.getMessage() + " verify");
             System.exit(EXIT_STATUS_HELLO_FAILED);
         }
         hi.sayHello(System.out);
