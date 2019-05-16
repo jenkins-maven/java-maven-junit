@@ -10,7 +10,8 @@ mvn clean'''
     }
     stage('Build') {
       steps {
-        sh 'mvn -Dmaven.test.failure.ignore=true install'
+        sh '''echo "Testing the master"
+mvn -Dmaven.test.failure.ignore=true install'''
       }
     }
   }
