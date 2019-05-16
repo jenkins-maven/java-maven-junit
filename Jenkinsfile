@@ -4,7 +4,7 @@ pipeline {
     stage('Inittialization') {
       steps {
         sh '''echo PATH = ${PATH}
-echo $M3_HOME = ${M3}
+echo M3_HOME = ${M3}
 mvn clean'''
       }
     }
