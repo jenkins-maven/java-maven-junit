@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('sonar') {
       steps {
         withSonarQubeEnv('sonar_scanner') {
           waitForQualityGate true
