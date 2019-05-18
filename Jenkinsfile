@@ -9,7 +9,7 @@ mvn package -Dmaven.test.skip=true'''
     }
     stage('deploy') {
       steps {
-        sh 'echo JOb_name= \'${env.JOB_NAME}\''
+        sh 'echo JOb_name= $JOB_NAME'
       }
     }
   }
